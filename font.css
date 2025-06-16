@@ -1,0 +1,47 @@
+/* 1. Đăng ký font-face trỏ đến font gốc */
+@font-face {
+  font-family: 'IconFont';
+  src: url('icon-list.html') format('woff2'),
+       url('icon-list.html')  format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 2. Định nghĩa từng icon: copy codepoint từ bộ font gốc */
+.icon-user:before            { content: "\e900"; }
+.icon-doc-text-inv:before    { content: "\e901"; }
+.icon-mail-alt:before        { content: "\e902"; }
+.icon-star-1:before          { content: "\e903"; }
+.icon-twitter:before         { content: "\e904"; }
+.icon-facebook:before        { content: "\e905"; }
+.icon-gplus:before           { content: "\e906"; }
+.icon-linkedin:before        { content: "\e907"; }
+.icon-user-1:before          { content: "\e908"; }
+.icon-lamp:before            { content: "\e909"; }
+.icon-facebook-circled:before{ content: "\e90A"; }
+.icon-linkedin-circled:before{ content: "\e90B"; }
+.icon-github-circled:before  { content: "\e90C"; }
+.ic-toolbox:before           { content: "\e90D"; }
+.ic-pencil:before            { content: "\e90E"; }
+.ic-tools-2:before           { content: "\e90F"; }
+.ic-mic:before               { content: "\e910"; }
+.ic-telescope:before         { content: "\e911"; }
+.ic-megaphone:before         { content: "\e912"; }
+.ic-strategy:before          { content: "\e913"; }
+.ic-hotairballoon:before     { content: "\e914"; }
+.ic-basket:before            { content: "\e915"; }
+
+/* 3. Rule chung cho tất cả icon */
+[class^="icon-"], [class^="ic-"] {
+  font-family: 'IconFont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Bạn có thể đặt thêm kích thước mặc định ở đây: */
+  font-size: 1.2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
